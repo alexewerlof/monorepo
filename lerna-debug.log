@@ -1,5 +1,5 @@
-0 silly input [ 'publish', '--access=public' ]
-1 silly flags { _: [ 'publish', '--access=public' ] }
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ] }
 2 verbose rootPath C:\Users\user\learn\monorepo
 3 info version 2.0.0
 4 silly isInitialized
@@ -15,45 +15,63 @@
 14 verbose getLastTag vnull
 15 info Comparing with vnull.
 16 silly diffSinceIn vnull C:\Users\user\learn\monorepo\packages\bar
-17 silly diff
+17 silly diff packages/bar/package.json
 18 silly diffSinceIn vnull C:\Users\user\learn\monorepo\packages\foo
-19 silly diff
-20 silly collectDependents
-21 silly collectUpdates
-22 info No updated packages to publish.
-23 silly initialize success
-24 silly execute attempt
-25 silly isDetachedHead
-26 silly getCurrentBranch
-27 verbose getCurrentBranch master
-28 verbose isDetachedHead false
-29 silly addFile C:\Users\user\learn\monorepo\lerna.json
-30 silly commit vundefined
-31 verbose commit [ 'commit', '-m', 'vundefined' ]
-32 silly addTag vundefined
-33 error execute Error: fatal: tag 'vundefined' already exists
-33 error execute
-33 error execute     at Function.module.exports.sync (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:277:26)
-33 error execute     at Function.execSync (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
-33 error execute     at Function.addTag (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\GitUtilities.js:90:39)
-33 error execute     at PublishCommand.gitCommitAndTagVersion (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:613:30)
-33 error execute     at PublishCommand.commitAndTagUpdates (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:582:27)
-33 error execute     at PublishCommand.execute (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:261:16)
-33 error execute     at PublishCommand._attempt (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:289:21)
-33 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:276:15
-33 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:298:13
-33 error execute     at PublishCommand.initialize (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:220:9)
-33 error execute  callback with error
-33 error execute  { Error: fatal: tag 'vundefined' already exists
-33 error execute
-33 error execute     at Function.module.exports.sync (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:277:26)
-33 error execute     at Function.execSync (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
-33 error execute     at Function.addTag (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\GitUtilities.js:90:39)
-33 error execute     at PublishCommand.gitCommitAndTagVersion (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:613:30)
-33 error execute     at PublishCommand.commitAndTagUpdates (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:582:27)
-33 error execute     at PublishCommand.execute (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:261:16)
-33 error execute     at PublishCommand._attempt (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:289:21)
-33 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:276:15
-33 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:298:13
-33 error execute     at PublishCommand.initialize (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:220:9)
-33 error execute   stack: 'Error: fatal: tag \'vundefined\' already exists\n\n    at Function.module.exports.sync (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\node_modules\\execa\\index.js:277:26)\n    at Function.execSync (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\ChildProcessUtilities.js:59:30)\n    at Function.addTag (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\GitUtilities.js:90:39)\n    at PublishCommand.gitCommitAndTagVersion (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\commands\\PublishCommand.js:613:30)\n    at PublishCommand.commitAndTagUpdates (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\commands\\PublishCommand.js:582:27)\n    at PublishCommand.execute (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\commands\\PublishCommand.js:261:16)\n    at PublishCommand._attempt (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\Command.js:289:21)\n    at C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\Command.js:276:15\n    at C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\Command.js:298:13\n    at PublishCommand.initialize (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\commands\\PublishCommand.js:220:9)' }
+19 silly diff packages/foo/package.json
+20 verbose updated @userpixel/bar
+21 verbose updated @userpixel/foo
+22 silly collectDependents
+23 silly isPackageDependentOf @userpixel/bar @userpixel/bar
+24 silly isPackageDependentOf @userpixel/bar @userpixel/foo
+25 silly isPackageDependentOf @userpixel/foo @userpixel/bar
+26 silly isPackageDependentOf @userpixel/foo @userpixel/foo
+27 silly collectUpdates
+28 verbose has filtered update @userpixel/bar
+29 verbose has filtered update @userpixel/foo
+30 silly initialize success
+31 silly execute attempt
+32 silly isDetachedHead
+33 silly getCurrentBranch
+34 verbose getCurrentBranch master
+35 verbose isDetachedHead false
+36 silly addFile C:\Users\user\learn\monorepo\lerna.json
+37 silly addFile C:\Users\user\learn\monorepo\packages\bar\package.json
+38 silly addFile C:\Users\user\learn\monorepo\packages\foo\package.json
+39 silly commit vnull
+40 verbose commit [ 'commit', '-m', 'vnull' ]
+41 error execute Error: On branch master
+41 error execute Your branch is up-to-date with 'origin/master'.
+41 error execute Changes not staged for commit:
+41 error execute 	modified:   lerna-debug.log
+41 error execute
+41 error execute no changes added to commit
+41 error execute
+41 error execute     at Function.module.exports.sync (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:277:26)
+41 error execute     at Function.execSync (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
+41 error execute     at Function.commit (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\GitUtilities.js:84:39)
+41 error execute     at PublishCommand.gitCommitAndTagVersion (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:612:30)
+41 error execute     at PublishCommand.commitAndTagUpdates (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:582:27)
+41 error execute     at PublishCommand.execute (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:261:16)
+41 error execute     at PublishCommand._attempt (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:289:21)
+41 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:276:15
+41 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:298:13
+41 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:495:11
+41 error execute  callback with error
+41 error execute  { Error: On branch master
+41 error execute Your branch is up-to-date with 'origin/master'.
+41 error execute Changes not staged for commit:
+41 error execute 	modified:   lerna-debug.log
+41 error execute
+41 error execute no changes added to commit
+41 error execute
+41 error execute     at Function.module.exports.sync (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:277:26)
+41 error execute     at Function.execSync (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
+41 error execute     at Function.commit (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\GitUtilities.js:84:39)
+41 error execute     at PublishCommand.gitCommitAndTagVersion (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:612:30)
+41 error execute     at PublishCommand.commitAndTagUpdates (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:582:27)
+41 error execute     at PublishCommand.execute (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:261:16)
+41 error execute     at PublishCommand._attempt (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:289:21)
+41 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:276:15
+41 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:298:13
+41 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:495:11
+41 error execute   stack: 'Error: On branch master\nYour branch is up-to-date with \'origin/master\'.\nChanges not staged for commit:\n\tmodified:   lerna-debug.log\n\nno changes added to commit\n\n    at Function.module.exports.sync (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\node_modules\\execa\\index.js:277:26)\n    at Function.execSync (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\ChildProcessUtilities.js:59:30)\n    at Function.commit (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\GitUtilities.js:84:39)\n    at PublishCommand.gitCommitAndTagVersion (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\commands\\PublishCommand.js:612:30)\n    at PublishCommand.commitAndTagUpdates (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\commands\\PublishCommand.js:582:27)\n    at PublishCommand.execute (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\commands\\PublishCommand.js:261:16)\n    at PublishCommand._attempt (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\Command.js:289:21)\n    at C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\Command.js:276:15\n    at C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\Command.js:298:13\n    at C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\commands\\PublishCommand.js:495:11' }
