@@ -1,0 +1,1 @@
+publish with `lerna publish -- --access=public`
