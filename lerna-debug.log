@@ -6,185 +6,57 @@
 5 silly isInitialized true
 6 silly existsSync C:\Users\user\learn\monorepo\VERSION
 7 silly initialize attempt
-8 info current version 0.0.0
+8 info current version undefined
 9 silly getUpdates
 10 info Checking for updated packages...
 11 silly hasTags
-12 verbose hasTags false
-13 info Comparing with initial commit.
-14 verbose updated @userpixel/bar
-15 verbose updated @userpixel/foo
-16 silly collectDependents
-17 silly isPackageDependentOf @userpixel/bar @userpixel/bar
-18 silly isPackageDependentOf @userpixel/bar @userpixel/foo
-19 silly isPackageDependentOf @userpixel/foo @userpixel/bar
-20 silly isPackageDependentOf @userpixel/foo @userpixel/foo
+12 verbose hasTags true
+13 silly getLastTag
+14 verbose getLastTag vundefined
+15 info Comparing with vundefined.
+16 silly diffSinceIn vundefined C:\Users\user\learn\monorepo\packages\bar
+17 silly diff
+18 silly diffSinceIn vundefined C:\Users\user\learn\monorepo\packages\foo
+19 silly diff
+20 silly collectDependents
 21 silly collectUpdates
-22 verbose has filtered update @userpixel/bar
-23 verbose has filtered update @userpixel/foo
-24 silly initialize success
-25 silly execute attempt
-26 silly isDetachedHead
-27 silly getCurrentBranch
-28 verbose getCurrentBranch master
-29 verbose isDetachedHead false
-30 silly addFile C:\Users\user\learn\monorepo\lerna.json
-31 silly addFile C:\Users\user\learn\monorepo\packages\bar\package.json
-32 silly addFile C:\Users\user\learn\monorepo\packages\foo\package.json
-33 silly commit v0.0.1
-34 verbose commit [ 'commit', '-m', 'v0.0.1' ]
-35 silly addTag v0.0.1
-36 info publish Publishing packages to npm...
-37 silly existsSync C:\Users\user\learn\monorepo\packages\bar\scripts\prepublish.js
-38 verbose execScript No prepublish script found at C:\Users\user\learn\monorepo\packages\bar\scripts\prepublish.js
-39 silly existsSync C:\Users\user\learn\monorepo\packages\foo\scripts\prepublish.js
-40 verbose execScript No prepublish script found at C:\Users\user\learn\monorepo\packages\foo\scripts\prepublish.js
-41 verbose publishing @userpixel/bar
-42 silly publishTaggedInDir latest bar
-43 silly getExecOpts { cwd: 'C:\\Users\\user\\learn\\monorepo\\packages\\bar' }
-44 verbose publishing @userpixel/foo
-45 silly publishTaggedInDir latest foo
-46 silly getExecOpts { cwd: 'C:\\Users\\user\\learn\\monorepo\\packages\\foo' }
-47 error publish Retrying failed publish: @userpixel/bar
-48 verbose publish error Error: Command failed: npm publish --tag latest
-48 verbose publish error npm ERR! publish Failed PUT 402
-48 verbose publish error npm ERR! code E402
-48 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @userpixel/bar
-48 verbose publish error
-48 verbose publish error npm ERR! A complete log of this run can be found in:
-48 verbose publish error npm ERR!     C:\Users\user\AppData\Roaming\npm-cache\_logs\2017-07-12T01_57_15_160Z-debug.log
-48 verbose publish error
-48 verbose publish error     at Promise.all.then.arr (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:210:11)
-48 verbose publish error     at <anonymous>
-48 verbose publish error     at process._tickCallback (internal/process/next_tick.js:169:7)
-49 verbose publishing @userpixel/bar
-50 silly publishTaggedInDir latest bar
-51 silly getExecOpts { cwd: 'C:\\Users\\user\\learn\\monorepo\\packages\\bar' }
-52 error publish Retrying failed publish: @userpixel/foo
-53 verbose publish error Error: Command failed: npm publish --tag latest
-53 verbose publish error npm ERR! publish Failed PUT 402
-53 verbose publish error npm ERR! code E402
-53 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @userpixel/foo
-53 verbose publish error
-53 verbose publish error npm ERR! A complete log of this run can be found in:
-53 verbose publish error npm ERR!     C:\Users\user\AppData\Roaming\npm-cache\_logs\2017-07-12T01_57_15_256Z-debug.log
-53 verbose publish error
-53 verbose publish error     at Promise.all.then.arr (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:210:11)
-53 verbose publish error     at <anonymous>
-53 verbose publish error     at process._tickCallback (internal/process/next_tick.js:169:7)
-54 verbose publishing @userpixel/foo
-55 silly publishTaggedInDir latest foo
-56 silly getExecOpts { cwd: 'C:\\Users\\user\\learn\\monorepo\\packages\\foo' }
-57 error publish Retrying failed publish: @userpixel/bar
-58 verbose publish error Error: Command failed: npm publish --tag latest
-58 verbose publish error npm ERR! publish Failed PUT 402
-58 verbose publish error npm ERR! code E402
-58 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @userpixel/bar
-58 verbose publish error
-58 verbose publish error npm ERR! A complete log of this run can be found in:
-58 verbose publish error npm ERR!     C:\Users\user\AppData\Roaming\npm-cache\_logs\2017-07-12T01_57_17_392Z-debug.log
-58 verbose publish error
-58 verbose publish error     at Promise.all.then.arr (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:210:11)
-58 verbose publish error     at <anonymous>
-58 verbose publish error     at process._tickCallback (internal/process/next_tick.js:169:7)
-59 verbose publishing @userpixel/bar
-60 silly publishTaggedInDir latest bar
-61 silly getExecOpts { cwd: 'C:\\Users\\user\\learn\\monorepo\\packages\\bar' }
-62 error publish Retrying failed publish: @userpixel/foo
-63 verbose publish error Error: Command failed: npm publish --tag latest
-63 verbose publish error npm ERR! publish Failed PUT 402
-63 verbose publish error npm ERR! code E402
-63 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @userpixel/foo
-63 verbose publish error
-63 verbose publish error npm ERR! A complete log of this run can be found in:
-63 verbose publish error npm ERR!     C:\Users\user\AppData\Roaming\npm-cache\_logs\2017-07-12T01_57_17_466Z-debug.log
-63 verbose publish error
-63 verbose publish error     at Promise.all.then.arr (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:210:11)
-63 verbose publish error     at <anonymous>
-63 verbose publish error     at process._tickCallback (internal/process/next_tick.js:169:7)
-64 verbose publishing @userpixel/foo
-65 silly publishTaggedInDir latest foo
-66 silly getExecOpts { cwd: 'C:\\Users\\user\\learn\\monorepo\\packages\\foo' }
-67 error publish Retrying failed publish: @userpixel/foo
-68 verbose publish error Error: Command failed: npm publish --tag latest
-68 verbose publish error npm ERR! publish Failed PUT 402
-68 verbose publish error npm ERR! code E402
-68 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @userpixel/foo
-68 verbose publish error
-68 verbose publish error npm ERR! A complete log of this run can be found in:
-68 verbose publish error npm ERR!     C:\Users\user\AppData\Roaming\npm-cache\_logs\2017-07-12T01_57_19_720Z-debug.log
-68 verbose publish error
-68 verbose publish error     at Promise.all.then.arr (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:210:11)
-68 verbose publish error     at <anonymous>
-68 verbose publish error     at process._tickCallback (internal/process/next_tick.js:169:7)
-69 verbose publishing @userpixel/foo
-70 silly publishTaggedInDir latest foo
-71 silly getExecOpts { cwd: 'C:\\Users\\user\\learn\\monorepo\\packages\\foo' }
-72 error publish Retrying failed publish: @userpixel/bar
-73 verbose publish error Error: Command failed: npm publish --tag latest
-73 verbose publish error npm ERR! publish Failed PUT 402
-73 verbose publish error npm ERR! code E402
-73 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @userpixel/bar
-73 verbose publish error
-73 verbose publish error npm ERR! A complete log of this run can be found in:
-73 verbose publish error npm ERR!     C:\Users\user\AppData\Roaming\npm-cache\_logs\2017-07-12T01_57_19_775Z-debug.log
-73 verbose publish error
-73 verbose publish error     at Promise.all.then.arr (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:210:11)
-73 verbose publish error     at <anonymous>
-73 verbose publish error     at process._tickCallback (internal/process/next_tick.js:169:7)
-74 verbose publishing @userpixel/bar
-75 silly publishTaggedInDir latest bar
-76 silly getExecOpts { cwd: 'C:\\Users\\user\\learn\\monorepo\\packages\\bar' }
-77 error publish Retrying failed publish: @userpixel/bar
-78 verbose publish error Error: Command failed: npm publish --tag latest
-78 verbose publish error npm ERR! publish Failed PUT 402
-78 verbose publish error npm ERR! code E402
-78 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @userpixel/bar
-78 verbose publish error
-78 verbose publish error npm ERR! A complete log of this run can be found in:
-78 verbose publish error npm ERR!     C:\Users\user\AppData\Roaming\npm-cache\_logs\2017-07-12T01_57_22_066Z-debug.log
-78 verbose publish error
-78 verbose publish error     at Promise.all.then.arr (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:210:11)
-78 verbose publish error     at <anonymous>
-78 verbose publish error     at process._tickCallback (internal/process/next_tick.js:169:7)
-79 verbose publishing @userpixel/bar
-80 silly publishTaggedInDir latest bar
-81 silly getExecOpts { cwd: 'C:\\Users\\user\\learn\\monorepo\\packages\\bar' }
-82 error publish Retrying failed publish: @userpixel/foo
-83 verbose publish error Error: Command failed: npm publish --tag latest
-83 verbose publish error npm ERR! publish Failed PUT 402
-83 verbose publish error npm ERR! code E402
-83 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @userpixel/foo
-83 verbose publish error
-83 verbose publish error npm ERR! A complete log of this run can be found in:
-83 verbose publish error npm ERR!     C:\Users\user\AppData\Roaming\npm-cache\_logs\2017-07-12T01_57_22_116Z-debug.log
-83 verbose publish error
-83 verbose publish error     at Promise.all.then.arr (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:210:11)
-83 verbose publish error     at <anonymous>
-83 verbose publish error     at process._tickCallback (internal/process/next_tick.js:169:7)
-84 verbose publishing @userpixel/foo
-85 silly publishTaggedInDir latest foo
-86 silly getExecOpts { cwd: 'C:\\Users\\user\\learn\\monorepo\\packages\\foo' }
-87 error publish Ran out of retries while publishing @userpixel/bar Error: Command failed: npm publish --tag latest
-87 error publish npm ERR! publish Failed PUT 402
-87 error publish npm ERR! code E402
-87 error publish npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @userpixel/bar
-87 error publish
-87 error publish npm ERR! A complete log of this run can be found in:
-87 error publish npm ERR!     C:\Users\user\AppData\Roaming\npm-cache\_logs\2017-07-12T01_57_24_393Z-debug.log
-87 error publish
-87 error publish     at Promise.all.then.arr (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:210:11)
-87 error publish     at <anonymous>
-87 error publish     at process._tickCallback (internal/process/next_tick.js:169:7)
-88 error execute callback with error
-88 error execute  Error: Command failed: npm publish --tag latest
-88 error execute npm ERR! publish Failed PUT 402
-88 error execute npm ERR! code E402
-88 error execute npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @userpixel/bar
-88 error execute
-88 error execute npm ERR! A complete log of this run can be found in:
-88 error execute npm ERR!     C:\Users\user\AppData\Roaming\npm-cache\_logs\2017-07-12T01_57_24_393Z-debug.log
-88 error execute
-88 error execute     at Promise.all.then.arr (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:210:11)
-88 error execute     at <anonymous>
-88 error execute     at process._tickCallback (internal/process/next_tick.js:169:7)
+22 info No updated packages to publish.
+23 silly initialize success
+24 silly execute attempt
+25 silly isDetachedHead
+26 silly getCurrentBranch
+27 verbose getCurrentBranch master
+28 verbose isDetachedHead false
+29 silly addFile C:\Users\user\learn\monorepo\lerna.json
+30 silly commit vundefined
+31 verbose commit [ 'commit', '-m', 'vundefined' ]
+32 error execute Error: On branch master
+32 error execute Your branch is up-to-date with 'origin/master'.
+32 error execute nothing to commit, working tree clean
+32 error execute
+32 error execute     at Function.module.exports.sync (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:277:26)
+32 error execute     at Function.execSync (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
+32 error execute     at Function.commit (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\GitUtilities.js:84:39)
+32 error execute     at PublishCommand.gitCommitAndTagVersion (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:612:30)
+32 error execute     at PublishCommand.commitAndTagUpdates (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:582:27)
+32 error execute     at PublishCommand.execute (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:261:16)
+32 error execute     at PublishCommand._attempt (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:289:21)
+32 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:276:15
+32 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:298:13
+32 error execute     at PublishCommand.initialize (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:220:9)
+32 error execute  callback with error
+32 error execute  { Error: On branch master
+32 error execute Your branch is up-to-date with 'origin/master'.
+32 error execute nothing to commit, working tree clean
+32 error execute
+32 error execute     at Function.module.exports.sync (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:277:26)
+32 error execute     at Function.execSync (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
+32 error execute     at Function.commit (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\GitUtilities.js:84:39)
+32 error execute     at PublishCommand.gitCommitAndTagVersion (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:612:30)
+32 error execute     at PublishCommand.commitAndTagUpdates (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:582:27)
+32 error execute     at PublishCommand.execute (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:261:16)
+32 error execute     at PublishCommand._attempt (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:289:21)
+32 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:276:15
+32 error execute     at C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\Command.js:298:13
+32 error execute     at PublishCommand.initialize (C:\Users\user\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:220:9)
+32 error execute   stack: 'Error: On branch master\nYour branch is up-to-date with \'origin/master\'.\nnothing to commit, working tree clean\n\n    at Function.module.exports.sync (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\node_modules\\execa\\index.js:277:26)\n    at Function.execSync (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\ChildProcessUtilities.js:59:30)\n    at Function.commit (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\GitUtilities.js:84:39)\n    at PublishCommand.gitCommitAndTagVersion (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\commands\\PublishCommand.js:612:30)\n    at PublishCommand.commitAndTagUpdates (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\commands\\PublishCommand.js:582:27)\n    at PublishCommand.execute (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\commands\\PublishCommand.js:261:16)\n    at PublishCommand._attempt (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\Command.js:289:21)\n    at C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\Command.js:276:15\n    at C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\Command.js:298:13\n    at PublishCommand.initialize (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\lerna\\lib\\commands\\PublishCommand.js:220:9)' }
